@@ -22,6 +22,7 @@ NeoBundle 'tpope/vim-surround'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'vim-scripts/AnsiEsc.vim'
 NeoBundle 'bronson/vim-trailing-whitespace'
+NeoBundle 'mattn/emmet-vim'
 
 call neobundle#end()
 
