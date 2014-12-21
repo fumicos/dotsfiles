@@ -14,6 +14,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/neomru.vim'
 NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'tpope/vim-fugitive'
 
 call neobundle#end()
 
@@ -30,6 +31,11 @@ NeoBundleCheck
 " sybtax color
 syntax on
 
+
+" Gitを便利に使う
+autocmd QuickFixCmdPost *grep* cwindow
+" ステータス行に現在のgitブランチを表示する
+set statusline+=%{fugitive#statusline()}
 
 " http://blog.remora.cx/2010/12/vim-ref-with-unite.html
 """"""""""""""""""""""""""""""
