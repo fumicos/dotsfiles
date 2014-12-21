@@ -17,20 +17,25 @@ NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'tpope/vim-rails'
 NeoBundle 'tpope/vim-endwise'
+NeoBundle 'tomtom/tcomment_vim'
+NeoBundle 'tpope/vim-surround'
+NeoBundle 'nathanaelkane/vim-indent-guides'
+NeoBundle 'vim-scripts/AnsiEsc.vim'
+NeoBundle 'bronson/vim-trailing-whitespace'
 
 call neobundle#end()
 
 " Required:
 filetype plugin indent on
 
-" If there are some plugins uninstalled, ask me if install or not. 
+" If there are some plugins uninstalled, ask me if install or not.
 NeoBundleCheck
 
 "-------------------------
 " End Neobundle Settings.
 "-------------------------
 
-" sybtax color
+" syntax color
 syntax on
 
 
@@ -38,6 +43,8 @@ syntax on
 autocmd QuickFixCmdPost *grep* cwindow
 " ステータス行に現在のgitブランチを表示する
 set statusline+=%{fugitive#statusline()}
+" vimを立ち上げたときに、自動的にvim-indent-guidesをオンにする
+let g:indent_guides_enable_on_vim_startup = 1
 
 " http://blog.remora.cx/2010/12/vim-ref-with-unite.html
 """"""""""""""""""""""""""""""
