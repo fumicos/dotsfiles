@@ -13,6 +13,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " Plugins!!
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/neomru.vim'
+NeoBundle 'scrooloose/nerdtree'
 
 call neobundle#end()
 
