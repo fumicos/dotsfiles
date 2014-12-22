@@ -197,6 +197,7 @@ endif
 imap { {}<LEFT>
 imap [ []<LEFT>
 imap ( ()<LEFT>
+imap < <><LEFT>
 """"""""""""""""""""""""""""""
 
 " filetypeの自動検出
